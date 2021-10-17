@@ -6,13 +6,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  @Input() posts = [];
+  @Input() posts: [] = [];
   constructor() {
 
   }
 
   ngOnInit(): void {
-    console.log(this.posts)
+
   }
 
 }
