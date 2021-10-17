@@ -6,7 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class PostsService {
 
-  constructor(http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
+  getAllPosts() {
+    return this.http.get("https://jsonplaceholder.typicode.com/posts");
+  }
 
 }

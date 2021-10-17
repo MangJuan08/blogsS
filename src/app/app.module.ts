@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommentsComponent } from './components/comments/comments.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { PostsComponent } from './pages/posts/posts.component';
+import { PostsComponent } from './components/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
