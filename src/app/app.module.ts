@@ -8,13 +8,17 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { PostpageComponent } from './pages/postpage/postpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     CommentsComponent,
-    HomepageComponent
+    HomepageComponent,
+    CarouselComponent,
+    PostpageComponent
   ],
   imports: [
     BrowserModule,
