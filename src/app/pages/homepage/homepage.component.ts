@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
+import { IPosts } from 'src/app/model/posts';
 import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
@@ -8,16 +11,17 @@ import { PostsService } from 'src/app/services/posts.service';
 })
 export class HomepageComponent implements OnInit {
 
+
   public posts: any;
   public title = "Homepage";
+  public dataSource: any;
+
   constructor(private srvPosts: PostsService) {
   }
 
   ngOnInit(): void {
-
-
     this.srvPosts.getAllPosts().subscribe((res) => {
-      this.posts = res;
+      this.posts = <IPosts>res;
     })
   }
 
