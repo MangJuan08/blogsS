@@ -10,18 +10,14 @@ export class HomepageComponent implements OnInit {
 
   public posts: any;
 
-  constructor(private srvPosts: PostsService) { }
+  constructor(private srvPosts: PostsService) {
+  }
 
   ngOnInit(): void {
-    this.posts = {
-      userId: 0,
-      id: 0,
-      title: ''
-    }
+
 
     this.srvPosts.getAllPosts().subscribe((res) => {
-      this.posts = Object.assign(res);
-
+      this.posts = res;
     })
   }
 
