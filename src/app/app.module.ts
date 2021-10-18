@@ -12,6 +12,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { PostpageComponent } from './pages/postpage/postpage.component';
 import { MaterialModule } from './material-module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
