@@ -1,8 +1,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IPosts } from 'src/app/model/posts';
 import { PostsService } from 'src/app/services/posts.service';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination } from "swiper";
+SwiperCore.use([Pagination]);
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',

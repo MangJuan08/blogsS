@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { PostpageComponent } from './pages/postpage/postpage.component';
 import { MaterialModule } from './material-module';
-
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { MaterialModule } from './material-module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
