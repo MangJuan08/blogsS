@@ -9,7 +9,7 @@ import { PostsService } from 'src/app/services/posts.service';
 export class HomepageComponent implements OnInit {
 
   public posts: any;
-
+  public title = "Homepage";
   constructor(private srvPosts: PostsService) {
   }
 

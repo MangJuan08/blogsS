@@ -10,6 +10,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { PostpageComponent } from './pages/postpage/postpage.component';
+import { MaterialModule } from './material-module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PostpageComponent } from './pages/postpage/postpage.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
