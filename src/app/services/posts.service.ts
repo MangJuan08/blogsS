@@ -14,4 +14,8 @@ export class PostsService {
     return this.http.get<IPosts>("https://jsonplaceholder.typicode.com/posts");
   }
 
+  getPost() {
+
+  }
+
 }
