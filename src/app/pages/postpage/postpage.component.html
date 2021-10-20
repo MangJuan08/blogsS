@@ -1,1 +1,22 @@
-<p>postpage works!</p>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="text-align:center">
+            <h1>{{ aPost.title | uppercase }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="text-align:center">
+            <input type="text">
+            <br><br>
+            <ul *ngFor="let comment of comments">
+                <app-comments [comment]="comment"></app-comments>
+            </ul>
+
+        </div>
+    </div>
+</div>
