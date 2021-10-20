@@ -12,6 +12,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { PostpageComponent } from './pages/postpage/postpage.component';
 import { MaterialModule } from './material-module';
 import { SwiperModule } from 'swiper/angular';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SwiperModule } from 'swiper/angular';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    SwiperModule
+    SwiperModule,
+    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

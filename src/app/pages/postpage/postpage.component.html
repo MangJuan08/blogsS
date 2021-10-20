@@ -11,7 +11,16 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4" style="text-align:center">
-            <input type="text">
+            <mat-form-field appearance="outline" style="width:100%;">
+                <textarea matInput></textarea>
+            </mat-form-field>
+            <editor apiKey="Get your free API key at tiny.cloud and paste it here" [init]="{
+    icons: 'material',
+    skin: 'borderless',
+    plugins: 'wordcount',
+    menubar: false,
+    min_height: 150
+  }"></editor>
             <br><br>
             <ul *ngFor="let comment of comments">
                 <app-comments [comment]="comment"></app-comments>
